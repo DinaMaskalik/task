@@ -1,3 +1,10 @@
+# Used
+1. Spring Boot
+2. Spring Data
+3. MySQL
+4. Hibernate
+5. Swagger
+
 # Start application
 1. Open project in special development environment.
 2. Сonfigure the SDK into the project.
