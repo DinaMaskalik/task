@@ -1,4 +1,4 @@
-# start
+# Start application
 1. Open project in special development environment.
 2. Сonfigure the SDK into the project.
 3. Find class JpaConfig.java in module data and enter your details for the database(username, password).
