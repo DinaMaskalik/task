@@ -22,4 +22,27 @@ public class TownAttractionService {
         }
         return attractions.get(0).getAttractions();
     }
+
+    @Transactional
+    public void createTown(TownsAttractions townsAttractions){
+        townDao.save(townsAttractions);
+    }
+
+    @Transactional
+    public void deleteTown(String name) {
+        townDao.deleteById(name);
+    }
+
+    @Transactional
+    public TownsAttractions findTown(String name){
+        final List<TownsAttractions> town = townDao.findByTown(name);
+        if(town.size()==0){
+            return null;
+        }
+        return town.get(0);
+    }
+
+    public void updateTown(TownsAttractions town) {
+        townDao.save(town);
+    }
 }
