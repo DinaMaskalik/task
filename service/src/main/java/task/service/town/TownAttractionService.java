@@ -35,14 +35,17 @@ public class TownAttractionService {
 
     @Transactional
     public TownsAttractions findTown(String name){
+        System.out.println(name);
         final List<TownsAttractions> town = townDao.findByTown(name);
         if(town.size()==0){
             return null;
         }
+        System.out.println(town);
         return town.get(0);
     }
 
+    @Transactional
     public void updateTown(TownsAttractions town) {
-        townDao.save(town);
+        townDao.saveAndFlush(town);
     }
 }
