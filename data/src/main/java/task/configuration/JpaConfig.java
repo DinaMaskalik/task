@@ -40,7 +40,7 @@ public class JpaConfig {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName(Driver.class.getName());
-        dataSource.setUrl("jdbc:mysql://localhost:3306/towns_attraction?createDatabaseIfNotExist=true&serverTimezone=UTC");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/product_kurs?createDatabaseIfNotExist=true&serverTimezone=UTC");
         dataSource.setUsername("root");
         dataSource.setPassword("root");
         return dataSource;
